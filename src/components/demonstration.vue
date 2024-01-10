@@ -82,18 +82,18 @@ onMounted(() => {
 
   setInterval(() => {
     if (switch_button.value) {
-      const random_now_trying = Math.random();
+      var random_now_trying = Math.random();
       if (random_now_trying <= 0.8) {
         now_trying.value = "havoc";
       } else {
         now_trying.value = "splice";
       }
-      const random_stage_execs_1 = Math.floor(Math.random() * 9000) + 1000; // stage_execs分母
-      const random_stage_execs_2 =
+      var random_stage_execs_1 = Math.floor(Math.random() * 9000) + 1000; // stage_execs分母
+      var random_stage_execs_2 =
         random_stage_execs_1 - Math.floor(Math.random() * 5000); // stage_execs分子
 
-      const random_total_execs = Math.floor(Math.random() * 2) + 0;
-      const random_exec_speed = Math.floor(Math.random() * 1100) + 900;
+      var random_total_execs = Math.floor(Math.random() * 2) + 0;
+      var random_exec_speed = Math.floor(Math.random() * 1100) + 900;
 
       if (random_stage_execs_2 < 0) {
         random_stage_execs_2 = 0.3 * random_stage_execs_1;
