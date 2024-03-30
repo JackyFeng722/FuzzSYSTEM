@@ -35,16 +35,8 @@ const routes= [
     },
   
 
-    {
-      name:"制备模块",
-      path: 'preparation',
-      component: ()=> import('../components/preparation.vue'),
-    },
-    {
-      name:"系统演示",
-      path: 'preparation_3d',
-      component: ()=> import('../components/preparation_3d.vue'),
-    },
+ 
+ 
  
     {
       name:"质量评价结果",
