@@ -55,7 +55,7 @@ export default {
     <el-container>
       <el-header>
         <div>
-          <span>模糊测试原型系统</span>
+          <span>面向C语言编译器的模糊测试平台</span>
         </div>
         <div>
           <div class="login_date"><Time></Time> &nbsp;</div>

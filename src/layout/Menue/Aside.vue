@@ -28,12 +28,45 @@ export default {
     return {
       user_authority: "访客",
       items_a: [
-        { title: "实验展示", icon: "SetUp", url: "/home/demonstration" },
-        { title: "结果评估", icon: "HomeFilled", url: "/home/result" },
-        // { title: "制备模块", icon: "Filter", url: "/home/preparation" },
-        { title: "种子调度", icon: "Platform", url: "/home/preparation_3d" },
-        { title: "变异调度", icon: "Platform", url: "/home/preparation_3d" },
-        // { title: "实验评估", icon: "PieChart", url: "/home/evaluate" },
+        {
+          title: "数据集选择界面",
+          icon: "Platform",
+          url: "/home/DatasetChoice",
+        },
+        {
+          title: "训练参数设置界面",
+          icon: "SetUp",
+          url: "/home/TrainingSet",
+        },
+        {
+          title: "生成策略和采样选择",
+          icon: "Files",
+          url: "/home/GenerateSample",
+        },
+        {
+          title: "测试用例生成界面",
+          icon: "DocumentCopy",
+          url: "/home/TestcaseGeneration",
+        },
+        {
+          title: "被测程序选择界面",
+          icon: "Pointer",
+          url: "/home/ChoiceProject",
+        },
+
+        {
+          title: "覆盖率分析界面",
+          icon: "DataAnalysis",
+          url: "/home/CoverageAnalysis",
+        },
+
+        {
+          title: "漏洞分析界面",
+          icon: "DataAnalysis",
+          url: "/home/VulnerabilityAnalysis",
+        },
+
+        // { title: "实验展示", icon: "SetUp", url: "/home/demonstration" },
       ],
 
       user_name: "",

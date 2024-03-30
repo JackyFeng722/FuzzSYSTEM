@@ -10,7 +10,7 @@ const routes= [
     name:"首页",
     path: '/home',  
     component: ()=> import('../view/Home.vue'),
-    redirect: "/home/demonstration",
+    redirect: "/home/DatasetChoice",
     meta:{
       requireAuth:true
     },
@@ -45,17 +45,53 @@ const routes= [
       path: 'preparation_3d',
       component: ()=> import('../components/preparation_3d.vue'),
     },
-    {
-      name:"质量评价模块",
-      path: 'evaluate',
-      component: ()=> import('../components/evaluate.vue'),
-    },
+ 
     {
       name:"质量评价结果",
       path: 'evaluate_result',
       component: ()=> import('../components/evaluate_result.vue'),
     },
 
+    {
+      name:"数据集选择界面",
+      path: 'DatasetChoice',
+      component: ()=> import('../components/DatasetChoice.vue'),
+    },
+    
+    {
+      name:"训练参数设置界面",
+      path: 'TrainingSet',
+      component: ()=> import('../components/TrainingSet.vue'),
+    },
+    {
+      name:"生成策略和采样选择",
+      path: 'GenerateSample',
+      component: ()=> import('../components/GenerateSample.vue'),
+    },
+
+    {
+      name:"测试用例生成界面",
+      path: 'TestcaseGeneration',
+      component: ()=> import('../components/TestcaseGeneration.vue'),
+    },
+    
+    {
+      name:"被测程序选择界面",
+      path: 'ChoiceProject',
+      component: ()=> import('../components/ChoiceProject.vue'),
+    },
+    {
+      name:"覆盖率分析界面",
+      path: 'CoverageAnalysis',
+      component: ()=> import('../components/CoverageAnalysis.vue'),
+    },
+    
+    {
+      name:"漏洞分析界面",
+      path: 'VulnerabilityAnalysis',
+      component: ()=> import('../components/VulnerabilityAnalysis.vue'),
+    },
+    
   ]
      
   },
