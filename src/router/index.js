@@ -3,7 +3,7 @@ const routes= [
   { 
     name:"App",
     path: '/', 
-    redirect:'/home/demonstration' //重定向，访问一开始的根目录 
+    redirect:'/home/DatasetChoice' //重定向，访问一开始的根目录 
   },
 
   { 
